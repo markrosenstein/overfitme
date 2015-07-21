@@ -1,0 +1,18 @@
+Package: overfitme
+Title: Examples of Overfitting Simulated Data
+Version: 0.0.0.9000
+Authors@R: person("Mark", "Rosenstein", email = "mark.rosenstein@gmail.com", role = c("aut", "cre"))
+Description: This package provides examples of overfitting simulated data.
+  Currently only an example using LDA and shiny, which is based on a static
+  example from Di Cook's Module 2 from SISBID 2015.
+Depends: R (>= 3.2.1)
+License: GPL-2
+LazyData: true
+Imports: 
+  dplyr (>= 0.4.2), 
+  ggplot2 (>= 1.0.1), 
+  MASS (>= 7.3.43), 
+  shiny (>= 0.12.1), 
+  stringr (>= 1.0.0)
+Suggests: knitr
+VignetteBuilder: knitr

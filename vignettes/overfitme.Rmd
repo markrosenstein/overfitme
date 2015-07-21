@@ -1,0 +1,19 @@
+---
+title: "overfitme"
+author: "Mark Rosenstein"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# overfitme: A package of bad news for high dimension data
+
+Actually, the only thing that works in this package is a demo
+of overfitting using linear discriminate analysis. If you run
+the function overfitLDA() then a shiny app should appear. You can
+change the number of noise features that are used in the lda and note
+the effect on train and test confusion matrix, see the train and test
+predictions and see the LDA coefficients.
