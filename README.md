@@ -12,4 +12,4 @@ output:
 This package illustrates some of the issues that may be encountered in 
 high dimensional data. Currently only a linear discriminate analysis 
 example in shiny is available. This is mainly a package to help me learn how to
-make packages.
+make packages. The only function worth trying is overfitLDA()
