@@ -5,7 +5,7 @@
 #'
 #' @return list of data for LDA simulation
 doLDA <- function() {
-  set.seed(717)
+  set.seed(10000)
   lda.tr.dat<-matrix(rnorm(20*14, 0, 1), nrow=20)
   lda.tr.dat<-data.frame(class=c(rep("c1", 10), rep("c2", 10)),
                          sig=c(rnorm(10, 2, 1), rnorm(10, 0, 1)), lda.tr.dat)
