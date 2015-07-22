@@ -59,7 +59,6 @@ doLDA <- function() {
 #' @param xmin ignored. Future work.
 #' @param xmax ignored. Future work.
 #' @return ggplot object
-#' @import ggplot2
 plotLDAPreds <- function(tr.preds, tst.preds, xmin, xmax) {
   set.seed(17)
   ggplot(tr.preds, aes(LD1, class, ymin=0, ymax=1, xmin=-13, xmax=9.5)) +
@@ -82,7 +81,6 @@ plotLDAPreds <- function(tr.preds, tst.preds, xmin, xmax) {
 #'
 #' @param scalings Data.frame of LDA coefficients
 #' @return ggplot object
-#' @import ggplot2
 plotLDAScalings <- function(scalings) {
   ggplot(scalings) + geom_linerange(aes(x=g, ymin=ymin, ymax=ymax, xmin=0,
                                         xmax=16)) +
@@ -96,7 +94,6 @@ instructions <- "There are 20 train (black circles) and 20 test (red triangles) 
 #' Describe a shiny UI
 #'
 #' @return A shiny UI description
-#' @import shiny
 makeUI <- function() {
   fluidPage(
     titlePanel('LDA: Overfit Me'),
